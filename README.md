@@ -30,7 +30,7 @@ Contains all the system design concepts.
 Contains all the networking concepts.
 ```
 
-## /operatingsystem
+## /operatingsystems
 ```
 Contains all the operating system concepts.
 ```
