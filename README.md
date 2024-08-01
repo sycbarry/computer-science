@@ -15,9 +15,9 @@ Contains all the database concepts.
 Contains all the machine learning concepts.
 ```
 
-## /algorithms
+## /algo-ds
 ```
-Contains all the algorithms.
+Contains all the algorithms and data structure implementations.
 ```
 
 ## /systemdesign
