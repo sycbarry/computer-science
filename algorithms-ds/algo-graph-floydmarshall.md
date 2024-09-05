@@ -9,7 +9,7 @@ We initialize the solution matrix same as the input graph matrix as a first step
 
 
 
-``` java 
+``` java
 // Number of vertices in the graph
 final static int INF = 99999;
 final static int V = 4;
@@ -45,3 +45,7 @@ void int[][] floydWarshall(int graph[][]) {
 
 
 ```
+
+## Example problems
+
+[[743-network-delay-time]]
