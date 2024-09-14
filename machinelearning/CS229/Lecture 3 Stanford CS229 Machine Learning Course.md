@@ -145,7 +145,7 @@ NM, uses "Quadratic Convergence"
 - under certain assumptions, the # of significant digits doubles with every iteration.
 - this is why the algorithm is very efficient, as after a few iterations we can get to the proper error value or goal.
 
-
+==**Note**== if the # of parameters are very big, use gradient descent . Otherwise, if the # of params are smaller, use gradient ascent.
 
 
 
