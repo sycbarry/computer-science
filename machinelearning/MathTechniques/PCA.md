@@ -1,6 +1,6 @@
 https://maxhalford.github.io/prince/pca/#resources
 
-Generally, PCA is used to reduce the dimensionality of data into their most optimal, or "principal" subcomponents.
+Generally, PCA is used to reduce the dimensionality of data into their most important or "principal" subcomponents. Great for reducing large (massive) feature sets into the most important ones. 
 
 Can be used with MLC techniques, when we do something like building a corpus of words with scores that match the input text. Then we take those vector scores and compile each into a PCA that fit into something more concise then the raw classified value. 
 
