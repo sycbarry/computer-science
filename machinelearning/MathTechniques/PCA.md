@@ -6,31 +6,29 @@ Can be used with MLC techniques, when we do something like building a corpus of 
 
 Original Data
 
-```
+```python
 tfidf = TfidfVectorizer()
 corpus = training_set['clean_text']
 Xfeatures = tfidf.fit_transform(corpus).toarray()
 ```
 
-```
+```python
 dataset = pd.DataFrame(Xfeatures)
 X = dataset.iloc[:, :-1].values 
 Y = dataset[4050] 
 X = pd.DataFrame(X)
 ```
 
-```
-    pca = prince.PCA(
-         n_components=20,
-         n_iter=10,
-         rescale_with_mean=False,
-         rescale_with_std=False,
-         copy=True,
-         check_input=True,
-         engine='sklearn',
-         random_state=234
-     )
-    pca = pca.fit(X_train)
+```python
+from sklearn.decomposition import PCA
+
+pca = PCA(n_components=10)
+tfidf_train_pca = pca.fit_transform(train_surnames.toarray())
+tfidf_test_pca = pca.transform(test_surnames.toarray())
+
+pca_columns = [f'Surname_PCA_{i+1}' for i in range(10)]
+df_train_pca = pd.DataFrame(tfidf_train_pca, columns=pca_columns)
+df_test_pca = pd.DataFrame(tfidf_test_pca, columns=pca_columns)
 ```
 
 Note, some of this code is copied from: https://www.kaggle.com/code/ahmadalijamali/twitter-financial-news-nlp-analysis-and-prediction. Referenced as fair-use.
